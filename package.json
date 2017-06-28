@@ -1,0 +1,16 @@
+{
+  "name": "pagespeed",
+  "version": "1.0.0",
+  "description": "Using PSI to monitor page speed status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "StarRepublic AB",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "fs": "0.0.1-security",
+    "psi": "^3.0.0"
+  }
+}

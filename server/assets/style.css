@@ -1,0 +1,151 @@
+body {
+    background: #171717;
+    color: #fff;
+    font-family: 'Lato', sans-serif;;
+    font-weight: lighter;
+}
+
+a {
+    color: #fff;
+    font-size: 120%;
+}
+
+.header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.header.warning {
+    background: darkred;
+}
+
+.offline-warning {
+    display: none;
+}
+
+.offline-warning.offline {
+    display: block;
+}
+
+.offline-warning h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: darkorange;
+}
+
+.reports {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.report-item {
+    position: relative;
+    flex: 1;
+    padding: 7px;
+    margin: 2px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    text-transform: uppercase;
+}
+
+.report-item .score {
+    position: absolute;
+    right: 3px;
+    bottom: 0px;
+    opacity: .5;
+    font-size: 200%;
+}
+
+.report-item-score-ok {
+    background: #669900;
+}
+
+.report-item-score-warning {
+    background: rgba(212, 205, 0, 0.8)
+}
+
+.report-item-score-bad {
+    background: darkred;
+}
+
+.report-item h1 {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.report-item p {
+    font-size: 12px;
+}
+
+.log-item {
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+.log-item.increased {
+    color: #beffbe;
+}
+
+.log-item.decreased {
+    color: #ffa0a0;
+}
+
+.extra-info {
+    visibility: hidden;
+}
+
+.report-item:hover .extra-info {
+    visibility: visible;
+}
+
+.report-item .url {
+    text-transform: none;
+}
+
+.top-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-transform: uppercase;
+}
+
+.top-links a {
+    padding-left: .5em;
+}
+
+@media (min-width: 1600px) {
+    body {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .server h1 {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    .server p {
+        font-size: 13px;
+    }
+
+    .top-links a {
+        padding-left: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-links {
+        position: static;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .top-links a {
+        padding-left: 0.5em;
+    }
+}
