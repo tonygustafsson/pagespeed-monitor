@@ -13,6 +13,10 @@ Using NodeJS for checking sites score with Google PageSpeed API. And a express s
 ## Setup nodejs packages
 `npm install ~/pagespeed/`
 
+## Setup websites to check
+Edit startJobs.js, there is a constant named sites here for you to edit.
+Environment desktop/mobile controls if PageSpeed is used as a Desktop client or a Mobile client.
+
 ## Setup cron job
 `crontab -e`
 
